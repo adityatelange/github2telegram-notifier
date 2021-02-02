@@ -1,5 +1,7 @@
 # Github2Telegram Notifier
 
+![](thumbnail.png)
+
 Uses Github Webhook and Vercel's Serverless API to send github event updates to Telegram chat.
 
 ## Setup
