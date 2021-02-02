@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/adityatelange/github2telegram-notifier#readme",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "crypto": "^1.0.1"
   }
 }
