@@ -1,4 +1,5 @@
 const event = require("../lib/eventSwitch.js");
+const sendMsg = require("../lib/sendMsg.js");
 
 // The main, exported, function of the endpoint,
 // dealing with the request and subsequent response
@@ -12,8 +13,15 @@ module.exports = async (req, res) => {
     if (method === "POST") {
         event.eventSwitch(gh_event, body).then((Msg) => {
             console.log(Msg);
+            sendMsg.sendMsg(Msg)
+                .then(() => {
+                    res.status(201).send({ status: "ok" });
+                })
+                .catch((err) => {
+                    console.log(err);
+                    res.status(err.response.status).send(err.response.statusText);
+                });
         });
-        res.status(200).send();
     } else {
         res.status(403).send();
     }

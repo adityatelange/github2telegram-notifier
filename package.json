@@ -18,5 +18,7 @@
     "url": "https://github.com/adityatelange/github2telegram-notifier/issues"
   },
   "homepage": "https://github.com/adityatelange/github2telegram-notifier#readme",
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
