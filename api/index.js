@@ -24,6 +24,6 @@ module.exports = async (req, res) => {
                 });
         });
     } else {
-        res.status(403).send();
+        res.status(200).send("这是个首页");
     }
 };
