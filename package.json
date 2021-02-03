@@ -12,7 +12,10 @@
     "vercel",
     "telegram"
   ],
-  "author": "adityatelange",
+  "author": {
+    "name": "Aditya Telange",
+    "url": "https://github.com/adityatelange"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/adityatelange/github2telegram-notifier/issues"
