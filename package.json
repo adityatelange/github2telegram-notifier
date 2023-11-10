@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/adityatelange/github2telegram-notifier#readme",
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^1.6.0",
     "crypto": "^1.0.1"
   }
 }
